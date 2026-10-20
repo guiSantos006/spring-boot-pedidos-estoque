@@ -61,4 +61,14 @@ public class StockMovement {
     @CreationTimestamp
     private Instant createdAt;
 
+    public StockMovement(
+            Product product,
+            Long quantity,
+            MovementTypeEnum type,
+            MovementReasonEnum reason) {
+        this.product = product;
+        this.quantity = quantity;
+        this.type = type;
+        this.reason = reason;
+    }
 }
